@@ -12,6 +12,10 @@ Nothing by now, and [any issue is welcomed!](https://github.com/avgjs/vscode-sto
 
 ## Release Notes
 
+### 0.1.2
+
+Add syntaxes (Logical Script).
+
 ### 0.1.1
 
 fix readme

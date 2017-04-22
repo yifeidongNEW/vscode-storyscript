@@ -1,0 +1,76 @@
+{
+    "New Statement 新建语句": {
+		"prefix": "let",
+		"body": [
+			"#let ${1:name} = ${2:arguments}"
+		],
+		"description": "New Statement 新建语句"
+	},
+	"New Global Archive Variables Statement 新建全局存档变量": {
+		"prefix": "let g",
+		"body": [
+			"#let $${1:name} = ${2:arguments}"
+		],
+		"description": "New Global Archive Variables Statement 新建全局存档变量"
+	},
+	"New Single Archive Variable Statement 新建单存档变量": {
+		"prefix": "let ar",
+		"body": [
+			"#let %${1:name} = ${2:arguments}"
+		],
+		"description": "New Single Archive Variable Statement 新建单存档变量"
+	},
+
+    "If Statement 条件判断语句": {
+		"prefix": "if",
+		"body": [
+			"#if ${1:condition}",
+			"\t$0",
+			"#end"
+		],
+		"description": "If Statement 条件判断语句"
+	},
+    "If-Else Statement 条件判断..除此之外": {
+		"prefix": "if-else",
+		"body": [
+            "#if ${1:condition}",
+			"\t$2",
+            "#else",
+            "\t$3",
+			"#end"
+		],
+		"description": "If-Else Statement 条件判断..除此之外"
+	},
+    "Elseif and Else Statement 条件判断..除此之外..时..其他情况": {
+		"prefix": "if-elseif-else",
+		"body": [
+            "#if ${1:conditionA}",
+			"\t$3",
+            "#elseif ${2:conditionB}",
+            "\t$4",
+            "#else",
+            "\t$5",
+			"#end"
+		],
+		"description": "Elseif and Else Statement 条件判断..除此之外..时..此外"
+	},
+
+    "While Statement 循环": {
+		"prefix": "while",
+		"body": [
+			"#while ${1:condition}",
+			"\t$2",
+			"#end"
+		],
+		"description": "While Statement 循环"
+	},
+    "For-Each Loop 循环迭代数组": {
+		"prefix": "foreach",
+		"body": [
+			"#foreach ${2:element} in ${1:array}",
+			"\t$3",
+			"#end"
+		],
+		"description": "For-Each Loop 循环迭代数组"
+	}
+}

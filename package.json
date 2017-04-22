@@ -35,6 +35,12 @@
                 "scopeName": "source.storyscript",
                 "path": "./syntaxes/storyscript.tmLanguage"
             }
+        ],
+        "snippets": [
+            {
+                "language": "storyscript",
+                "path": "./snippets/storyscript.json"
+            }
         ]
     }
 }
